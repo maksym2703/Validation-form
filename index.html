@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abler</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="src/img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="src/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <div class="w-full container mx-auto grid grid-rows-[auto_1fr_auto] sm:w-3/5">
+      <header>
+        <img
+          class="h-16 w-16 mx-auto my-12 sm:h-20 sm:w-20 sm:my-10 lg:h-24 lg:w-24 lg:my-16"
+          src="./src/img/abler-logo.svg"
+          alt="abler-logo"
+        />
+      </header>
+      <main>
+        <h1
+          id="header"
+          class="text-lg sm:text-2lg tracking-tight lg:tracking-normal font-semibold mb-3 sm:mb-5 ml-7 sm:text-2xl lg:mb-10 lg:font-bold lg:text-5xl"
+        >
+          Welcome
+        </h1>
+        <form name="form" method="POST">
+          <label class="grid grid-cols-[0px_minmax(200px,_1fr)] lg:my-12" for="email">
+            <svg
+              id="person"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 sm:h-6 sm:w-6 text-grey-50 z-10 justify-self-start self-center ml-6 lg:h-7 lg:w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              />
+            </svg>
+            <input
+              id="email"
+              class="w-full border-b py-3 px-12 sm:px-14 outline-none placeholder:text-sm sm:placeholder:text-lg placeholder:text-grey-50 sm:text-lg text-sm lg:placeholder:text-2xl"
+              type="email"
+              placeholder="Email address"
+              required
+            />
+          </label>
+          <label for="password" class="grid grid-cols-[0px_minmax(200px,_1fr)_0px] lg:mb-10">
+            <div class="relative pl-6 z-10">
+              <svg
+                id="unlock"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hidden h-5 w-5 sm:h-6 sm:w-6 text-grey-50 absolute top-3 lg:top-2.5 left-6 lg:h-7 lg:w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#000000"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
+                />
+              </svg>
+
+              <svg
+                id="lock"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 sm:h-6 sm:w-6 text-grey-50 z-10 absolute top-3 lg:top-2.5 left-6 lg:h-7 lg:w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                />
+              </svg>
+            </div>
+            <input
+              id="password"
+              class="w-full border-b py-3 pl-12 sm:pl-14 outline-none placeholder:text-sm sm:placeholder:text-lg placeholder:text-grey-50 sm:text-lg text-sm lg:placeholder:text-2xl"
+              type="password"
+              placeholder="Password"
+              minlength="8"
+              required
+            />
+            <svg
+              id="eye"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-grey-50 h-5 w-5 self-center -translate-x-10 lg:h-7 lg:w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+              />
+            </svg>
+          </label>
+          <div
+            class="grid grid-cols-[1fr_80px] sm:grid-cols-[1fr_100px] lg:grid-cols-[1fr_120px] py-3 sm:py-7"
+          >
+            <div class="ml-6 grid grid-cols-[25px_1fr]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 sm:h-6 sm:w-6 text-grey-50 self-center lg:h-7 lg:w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <a class="text-xs sm:text-sm sm:ml-2 text-grey-50 self-center lg:text-lg" href="#"
+                >Forgot password</a
+              >
+            </div>
+            <button
+              id="button"
+              class="border border-grey-50 rounded-full px-4 py-1 sm:px-5 text-xs sm:text-sm text-grey-50 justify-self-start sm:self-end self-center lg:text-xl lg:px-6 lg:py-2"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+      </main>
+      <footer>
+        <div class="flex justify-between sm:justify-between bg-grey-10 pt-2 pb-4 sm:py-4">
+          <a class="ml-6" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mt-1 h-7 w-7 sm:h-8 sm:w-8 stroke-grey-50 border p-1 lg:h-8 lg:w-8 rounded-full bg-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+              />
+            </svg>
+          </a>
+          <a class="mr-5 sm:mr-7" href="#">
+            <span class="text-xs sm:text-sm text-grey-50 lg:text-xl">New user</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 sm:h-6 inline sm:w-6 lg:h-7 lg:w-7 rotate-180 stroke-grey-50"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+              />
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
